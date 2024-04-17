@@ -1,24 +1,14 @@
 
-  {
-    "version": 2,
-    "builds": [
-        {
-            "src": "package.json",
-            "use": "vercel-sapper"
-        },
-        {
-            "src": "videoconference/wsgi.py",
-            "use": "@vercel/python"
-        }
-    ],
+{
+    "builds": [{
+        "src": "videoconference/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "videoconference/wsgi.py",
-            "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-            "headers": {
-                "Access-Control-Allow-Origin": "*"
-            }
+            "dest": "videoconference/wsgi.py"
         }
     ]
 }
