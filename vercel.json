@@ -1,14 +1,20 @@
 {
-    
     "builds": [{
-        "src": "videoconference/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+      "src": "videoconference/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
+      }
     }],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "videoconference/wsgi.py"
-        }
+      {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "videoconference/wsgi.py"
+      }
     ]
-}
+  }
