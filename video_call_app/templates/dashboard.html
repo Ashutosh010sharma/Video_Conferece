@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static %}
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="{% static 'hero3.jpeg' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <link rel="shortcut icon" type="x-icon" href="{% static 'meetnowlogo.svg' %}">
     <style>
         @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
@@ -57,8 +60,8 @@
 }
     </style>
 </head>
-<body class="bg-opacity-75 bg-emerald-400 dark:bg-gray-900">
-    <div class="min-h-screen flex flex-col justify-center relative overflow-hidden sm:py-12">
+<body class="bg-opacity-75 bg-emerald-400 dark:bg-gray-900 min-h-screen ">
+    <div class="flex flex-col justify-center relative overflow-hidden sm:py-12">
         <div class="max-w-7xl mx-auto">
             <h1 class="text-3xl font-bold text-gray-800 text-center mb-12">Welcome, {{name}}...</h1> 
             <div class="relative group max-w-xl">
@@ -66,7 +69,7 @@
                 <div class="relative px-12 py-8 bg-white ring-1 ring-gray-900/5 rounded-lg items-top space-x-6 ">
                 
                         <!-- Buttons -->
-                        <div class="flex flex-col space-y-4 mt-4 w-96">
+                        <div class="flex flex-col space-y-4 mt-4 sm:w-96">
                             <a href="{% url 'meeting' %} ">
                             <button class="px-8 py-6 w-full bg-transparent hover:bg-emerald-900 text-emerald-900 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-emerald-900 hover:border-transparent text-3xl font-bold">New Meeting</button>
                             </a>
@@ -82,8 +85,11 @@
             </div>
         </div>
        
-        <!--Waves Container-->
+        
+    </div>
+    <!--Waves Container-->
          
+           <div class="waves">
             <svg class="waves -mb-24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -96,9 +102,9 @@
             <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
             </svg>
+           </div>
 
         <!--Waves end-->
-    </div>
 
 
 
