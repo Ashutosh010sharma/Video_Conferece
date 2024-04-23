@@ -10,6 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
     <link rel="shortcut icon" type="x-icon" href="{% static 'meetnowlogo.svg' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
       @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
@@ -28,11 +29,11 @@
 
 .content h2:nth-child(1) {
 	color: transparent;
-	-webkit-text-stroke: 2px #064E3B;
+	-webkit-text-stroke: 2px #085024;
 }
 
 .content h2:nth-child(2) {
-	color: #34D399;
+	color: #124935;
 	animation: animate 4s ease-in-out infinite;
 }
 
@@ -95,6 +96,12 @@
             <p class="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
               Connecting you instantly to anyone, anywhere. Experience seamless communication with our intuitive platform.
             </p>
+            <div class="w-2/3 ">
+              <h1 class="text-lg font-semibold text-emerald-900">Meet The Creater<a href="https://www.instagram.com/ashu.v.11/" class="mx-4"><i class="fa-brands fa-instagram "></i></a>
+                <a href="https://www.linkedin.com/in/ashutosh-sharma-727873233/"  ><i class="fa-brands fa-linkedin-in"></i></a>
+              </h1>
+              
+            </div>
             
           </div>
           <div class="w-full max-w-xl xl:px-8 xl:w-5/12 ">
@@ -125,47 +132,13 @@
 
       
       
-      <!-- Pin to top right corner -->
-        <div class="absolute top-0 right-0 h-12 w-18 p-4">
-          <button class="js-change-theme focus:outline-none">🌙</button>
-        </div>
+    
   
   </div>
   
       <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
       <script src="https://unpkg.com/tippy.js@4"></script>
-      <script>
-          //Init tooltips
-          tippy('.link',{
-            placement: 'bottom'
-          })
-  
-          //Toggle mode
-          const toggle = document.querySelector('.js-change-theme');
-          const body = document.querySelector('body');
-          const profile = document.getElementById('profile');
-          
-          
-          toggle.addEventListener('click', () => {
-  
-            if (body.classList.contains('text-gray-900')) {
-              toggle.innerHTML = "☀️";
-              body.classList.remove('text-gray-900');
-              body.classList.add('text-gray-100');
-              profile.classList.remove('bg-white');
-              profile.classList.add('bg-gray-900');
-            } else
-            {
-              toggle.innerHTML = "🌙";
-              body.classList.remove('text-gray-100');
-              body.classList.add('text-gray-900');
-              profile.classList.remove('bg-gray-900');			
-              profile.classList.add('bg-white');
-              
-            }
-          });
-          
-      </script>
+      
       
   </body>
 
