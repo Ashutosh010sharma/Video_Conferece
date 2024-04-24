@@ -96,9 +96,13 @@
             <p class="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
               Connecting you instantly to anyone, anywhere. Experience seamless communication with our intuitive platform.
             </p>
-            <div class="w-2/3 ">
-              <h1 class="text-lg font-semibold text-emerald-900">Meet The Creater<a href="https://www.instagram.com/ashu.v.11/" class="mx-4"><i class="fa-brands fa-instagram "></i></a>
-                <a href="https://www.linkedin.com/in/ashutosh-sharma-727873233/"  ><i class="fa-brands fa-linkedin-in"></i></a>
+            <div class="">
+              <h1 class="text-lg font-semibold text-emerald-900">Meet The Creater
+                <a href="https://www.instagram.com/ashu.v.11/" class="mx-4 hover:bg-orange-500 transition duration-300 rounded-full border-2 border-orange-500 hover:border-white" target="_blank"><i class="fa-brands fa-instagram p-2 hover:text-white transition duration-300 "></i></a>
+
+                <a href="https://www.linkedin.com/in/ashutosh-sharma-727873233/" class="mr-4 rounded-full border-2 border-blue-500 hover:bg-blue-500 transition duration-300 hover:border-white" target="_blank"><i class="fa-brands fa-linkedin-in p-2 hover:text-white transition duration-300 "></i></a>
+
+                <a href="https://github.com/Ashutosh010sharma" class="rounded-full border-2 border-gray-500 hover:bg-gray-500 transition duration-300 hover:border-white" target="_blank"><i class="fa-brands fa-github p-2 hover:text-white transition duration-300 "></i></a>
               </h1>
               
             </div>
@@ -112,12 +116,23 @@
               <img class="rounded" src="{% static 'banner.jpeg'%}" alt="">
               
                 <div class="mt-8 flex justify-around">
-                  <a href="{% url 'login' %}"
-                class="bg-transparent hover:bg-emerald-900 text-emerald-900 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-emerald-900 hover:border-transparent">
-                Log In</a>
-                <a href="{% url 'register' %}"
-                class="bg-transparent hover:bg-emerald-900 text-emerald-900 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-emerald-900 hover:border-transparent">
-                Sign Up</a>
+                  <a href="{% url 'login' %}" class="relative w-32 text-lg font-semibold text-center px-5 py-2 overflow-hidden text-emerald-900 bg-emerald-400 border-2 border-emerald-900 rounded-xl shadow-inner group">
+                    <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                    <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                    <span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-emerald-900 group-hover:h-full ease"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-emerald-900 group-hover:h-full ease"></span>
+                    <span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-emerald-900 opacity-0 group-hover:opacity-100"></span>
+                    <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease">Log In</span>
+                    </a>
+                 
+                <a href="{% url 'register' %}" class="relative w-32 text-lg font-semibold text-center px-5 py-2 overflow-hidden text-emerald-900 bg-emerald-400 border-2 border-emerald-900 rounded-xl shadow-inner group">
+                  <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                  <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                  <span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-emerald-900 group-hover:h-full ease"></span>
+                  <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-emerald-900 group-hover:h-full ease"></span>
+                  <span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-emerald-900 opacity-0 group-hover:opacity-100"></span>
+                  <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease">Sign Up</span>
+                  </a>
                 </div>
               
              
